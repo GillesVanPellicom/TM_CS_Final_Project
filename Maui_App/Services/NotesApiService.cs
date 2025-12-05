@@ -1,3 +1,5 @@
+#nullable enable
+
 using System.Net.Http.Json;
 using Maui_App.Models;
 

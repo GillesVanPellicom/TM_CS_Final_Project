@@ -4,14 +4,17 @@
     <selectionStates>
       <SelectionState runConfigName="Maui_App">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-12-05T17:49:24.937554Z">
+        <DropdownSelection timestamp="2025-12-05T18:48:52.662294Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="Default" identifier="serial=emulator-5554;connection=fd2bc518" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=/Users/gvp/.android/avd/Pixel_9_Pro.avd" />
             </handle>
           </Target>
         </DropdownSelection>
         <DialogSelection />
+      </SelectionState>
+      <SelectionState runConfigName="Final_Project">
+        <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
   </component>

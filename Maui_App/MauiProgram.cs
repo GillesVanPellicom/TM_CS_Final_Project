@@ -54,9 +54,9 @@ public static class MauiProgram
     Routing.RegisterRoute(nameof(AddEditNotePage), typeof(AddEditNotePage));
 
 
-#if DEBUG
-    builder.Logging.AddDebug();
-#endif
+// #if DEBUG
+//     builder.Logging.AddDebug();
+// #endif
 
     return builder.Build();
   }

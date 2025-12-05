@@ -1,4 +1,0 @@
-/Users/gvp/RiderProjects/Final_Project/Maui_App/obj/Debug/net8.0-android/android-arm64/Maui_App.GeneratedMSBuildEditorConfig.editorconfig
-/Users/gvp/RiderProjects/Final_Project/Maui_App/obj/Debug/net8.0-android/android-arm64/Maui_App.AssemblyInfoInputs.cache
-/Users/gvp/RiderProjects/Final_Project/Maui_App/obj/Debug/net8.0-android/android-arm64/Maui_App.AssemblyInfo.cs
-/Users/gvp/RiderProjects/Final_Project/Maui_App/obj/Debug/net8.0-android/android-arm64/Maui_App.csproj.CoreCompileInputs.cache

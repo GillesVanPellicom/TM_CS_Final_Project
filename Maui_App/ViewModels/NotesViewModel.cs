@@ -50,7 +50,7 @@ public class NotesViewModel : BindableObject
         }
         catch (Exception ex)
         {
-            // Handle exceptions
+            Console.WriteLine($"Error loading notes: {ex.Message}");
         }
     }
 
@@ -64,7 +64,7 @@ public class NotesViewModel : BindableObject
         }
         catch (Exception ex)
         {
-            // Handle exceptions
+            Console.WriteLine($"Error deleting note: {ex.Message}");
         }
     }
 
@@ -82,7 +82,7 @@ public class NotesViewModel : BindableObject
         }
         catch (Exception ex)
         {
-            // Handle exceptions
+            Console.WriteLine($"Error searching notes: {ex.Message}");
         }
     }
 }

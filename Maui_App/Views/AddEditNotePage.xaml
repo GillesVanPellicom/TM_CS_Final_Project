@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:Maui_App.ViewModels"
              x:Class="Maui_App.Views.AddEditNotePage"
              x:Name="AddEditPage"
-             Title="Add/Edit Note">
+             Title="Add/Edit Note"
+             x:DataType="ViewModels:AddEditNoteViewModel">
     <VerticalStackLayout>
         <Entry Placeholder="Title" Text="{Binding Note.Title}" />
         <Editor Placeholder="Content" Text="{Binding Note.Content}" />

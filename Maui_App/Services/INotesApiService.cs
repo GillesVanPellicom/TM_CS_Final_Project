@@ -1,3 +1,5 @@
+#nullable enable
+
 using Maui_App.Models;
 
 namespace Maui_App.Services;

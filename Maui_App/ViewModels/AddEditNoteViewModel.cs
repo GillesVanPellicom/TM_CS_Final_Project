@@ -51,7 +51,7 @@ public class AddEditNoteViewModel : BindableObject
         }
         catch (Exception ex)
         {
-            // Handle exceptions
+            Console.WriteLine($"Error loading note: {ex.Message}");
         }
     }
 
@@ -75,7 +75,7 @@ public class AddEditNoteViewModel : BindableObject
         }
         catch (Exception ex)
         {
-            // Handle exceptions
+            Console.WriteLine($"Error saving note: {ex.Message}");
         }
     }
 }
