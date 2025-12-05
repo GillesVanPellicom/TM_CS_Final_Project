@@ -85,6 +85,17 @@ This will:
 - `DELETE /notes/{id}` — delete
 - `GET /notes/search?query=...` — search in title/content
 
+Working curl
+```
+curl -v -X POST \
+http://127.0.0.1:8080/Notes \
+-H 'Content-Type: application/json' \
+-d '{
+"title": "My Test Note",
+"content": "This is a note created via curl."
+}'
+```
+
 ---
 
 ### Troubleshooting
