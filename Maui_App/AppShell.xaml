@@ -1,0 +1,13 @@
+﻿<Shell
+    x:Class="Maui_App.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Maui_App.Views"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Notes"
+        ContentTemplate="{DataTemplate local:NotesPage}"
+        Route="NotesPage" />
+
+</Shell>

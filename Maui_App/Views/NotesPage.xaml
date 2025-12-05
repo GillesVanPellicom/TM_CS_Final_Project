@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_App.Views.NotesPage"
+             x:Name="NotesPageRoot"
+             Title="Notes">
+    <VerticalStackLayout>
+        <SearchBar x:Name="searchBar" Placeholder="Search notes"
+                   SearchCommand="{Binding SearchCommand}"
+                   SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}" />
+        <ListView ItemsSource="{Binding Notes}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Title}" Detail="{Binding Date}">
+                        <TextCell.ContextActions>
+                            <MenuItem Text="Edit"
+                                      Command="{Binding Source={x:Reference Name=NotesPageRoot}, Path=BindingContext.EditNoteCommand}"
+                                      CommandParameter="{Binding .}" />
+                            <MenuItem Text="Delete"
+                                      Command="{Binding Source={x:Reference Name=NotesPageRoot}, Path=BindingContext.DeleteNoteCommand}"
+                                      CommandParameter="{Binding .}"
+                                      IsDestructive="True" />
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Add Note" Command="{Binding AddNoteCommand}" />
+    </VerticalStackLayout>
+</ContentPage>
