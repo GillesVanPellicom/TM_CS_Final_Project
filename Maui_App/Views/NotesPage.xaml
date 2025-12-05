@@ -9,7 +9,7 @@
              Title="Notes"
              x:DataType="ViewModels:NotesViewModel">
     <VerticalStackLayout>
-        <SearchBar x:Name="searchBar" Placeholder="Search notes"
+        <SearchBar x:Name="SearchBar" Placeholder="Search notes"
                    SearchCommand="{Binding SearchCommand}" />
         <ListView ItemsSource="{Binding Notes}">
             <ListView.ItemTemplate>
@@ -17,10 +17,10 @@
                     <TextCell Text="{Binding Title}" Detail="{Binding Date}">
                         <TextCell.ContextActions>
                             <MenuItem Text="Edit"
-                                      Command="{Binding Path=BindingContext.EditNoteCommand, RelativeSource={RelativeSource AncestorType={x:Type views:NotesPage}}}"
+                                      Command="{Binding Source={x:Reference NotesPageRoot}, Path=BindingContext.EditNoteCommand}"
                                       CommandParameter="{Binding .}" />
                             <MenuItem Text="Delete"
-                                      Command="{Binding Path=BindingContext.DeleteNoteCommand, RelativeSource={RelativeSource AncestorType={x:Type views:NotesPage}}}"
+                                      Command="{Binding Source={x:Reference NotesPageRoot}, Path=BindingContext.DeleteNoteCommand}"
                                       CommandParameter="{Binding .}"
                                       IsDestructive="True" />
                         </TextCell.ContextActions>
