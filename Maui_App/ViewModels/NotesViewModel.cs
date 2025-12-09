@@ -64,11 +64,31 @@ public class NotesViewModel : BindableObject
     {
         _api = api;
         Notes = new ObservableCollection<Note>();
-        AddNoteCommand = new Command(async () => await Shell.Current.GoToAsync(nameof(AddEditNotePage)));
+        AddNoteCommand = new Command(async () =>
+        {
+            if (IsBusy) return;
+            IsBusy = true;
+            try
+            {
+                await Shell.Current.GoToAsync(nameof(AddEditNotePage));
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        });
         EditNoteCommand = new Command<Note>(async (note) =>
         {
-            if (note != null)
+            if (note == null || IsBusy) return;
+            IsBusy = true;
+            try
+            {
                 await Shell.Current.GoToAsync($"{nameof(AddEditNotePage)}?noteId={note.Id}");
+            }
+            finally
+            {
+                IsBusy = false;
+            }
         });
         DeleteNoteCommand = new Command<Note>(async (note) => await DeleteNote(note));
         SearchCommand = new Command(async () => await SearchNotes());
