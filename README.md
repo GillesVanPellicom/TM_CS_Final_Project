@@ -38,11 +38,11 @@ docker compose up --build
 
 This will:
 - Start MySQL (db: `notesdb`, user: `notes`, password: `notespwd`)
-- Build and run the API on `http://localhost:8080` with Swagger at `/swagger`
+- Build and run the API on `http://localhost:8080` with Swagger at <a href="http://localhost:8080/swagger/index.html">/swagger</a>
 
 2) Run the MAUI app:
 - Desktop (MacCatalyst/Windows): open `Final_Project/Maui_App` in your IDE and run.
-- Android Emulator: run the MAUI app on the emulator. The app auto-uses `http://10.0.2.2:8080` for the API on Android and `http://localhost:8080` on desktop.
+- Android Emulator: run the MAUI app on the emulator. The app auto-uses the Android `http://10.0.2.2:8080` for the API on Android and `http://localhost:8080` on desktop.
 
 ---
 

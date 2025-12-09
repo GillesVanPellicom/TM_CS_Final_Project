@@ -9,6 +9,9 @@
     <VerticalStackLayout>
         <Entry Placeholder="Title" Text="{Binding Note.Title}" IsTextPredictionEnabled="False"/>
         <Editor Placeholder="Content" Text="{Binding Note.Content}" IsTextPredictionEnabled="False" HeightRequest="500" VerticalOptions="FillAndExpand"/>
-        <Button Text="Save" Command="{Binding SaveNoteCommand}" />
+        <HorizontalStackLayout Spacing="10">
+            <Button Text="Save" Command="{Binding SaveNoteCommand}" />
+            <Button Text="Delete" Command="{Binding DeleteNoteCommand}" IsVisible="{Binding Note.Id, Converter={StaticResource IntToBoolConverter}}" />
+        </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

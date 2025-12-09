@@ -19,8 +19,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="552a3517-e316-4cff-8315-7b5e9a6edaff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Maui_App/Converters/IntToBoolConverter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Final_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Final_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maui_App/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Maui_App/App.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maui_App/ViewModels/AddEditNoteViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Maui_App/ViewModels/AddEditNoteViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maui_App/Views/AddEditNotePage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Maui_App/Views/AddEditNotePage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +215,7 @@
       <workItem from="1764960424619" duration="4979000" />
       <workItem from="1765036830624" duration="2018000" />
       <workItem from="1765288914288" duration="1441000" />
-      <workItem from="1765290729647" duration="5788000" />
+      <workItem from="1765290729647" duration="6337000" />
     </task>
     <servers />
   </component>

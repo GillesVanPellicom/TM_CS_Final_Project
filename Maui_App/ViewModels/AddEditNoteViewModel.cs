@@ -33,12 +33,14 @@ public class AddEditNoteViewModel : BindableObject
     }
 
     public ICommand SaveNoteCommand { get; }
+    public ICommand DeleteNoteCommand { get; }
 
     public AddEditNoteViewModel(INotesApiService api)
     {
         _api = api;
         Note = new Note();
         SaveNoteCommand = new Command(async () => await SaveNote());
+        DeleteNoteCommand = new Command(async () => await DeleteNote());
     }
 
     private async void LoadNote()
@@ -76,6 +78,23 @@ public class AddEditNoteViewModel : BindableObject
         catch (Exception ex)
         {
             Console.WriteLine($"Error saving note: {ex.Message}");
+        }
+    }
+
+    private async Task DeleteNote()
+    {
+        try
+        {
+            if (Note.Id != 0)
+            {
+                var ok = await _api.DeleteNoteAsync(Note.Id);
+                if (ok)
+                    await Shell.Current.GoToAsync("..");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error deleting note: {ex.Message}");
         }
     }
 }
