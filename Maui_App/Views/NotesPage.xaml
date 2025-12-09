@@ -7,16 +7,22 @@
              x:Name="NotesPageRoot"
              Title="Notes"
              x:DataType="ViewModels:NotesViewModel">
-    <Grid RowDefinitions="Auto, *, Auto" Padding="10">
+    <Grid RowDefinitions="Auto, Auto, *, Auto" Padding="10">
 
         <SearchBar Grid.Row="0" 
                    x:Name="SearchBar" 
                    Placeholder="Search notes"
+                   Text="{Binding SearchText}"
                    SearchCommand="{Binding SearchCommand}" 
                    IsTextPredictionEnabled="False" 
                    IsSpellCheckEnabled="False"/>
+        
+        <Button Grid.Row="1"
+                Text="Clear Search"
+                Command="{Binding ClearSearchCommand}"
+                IsVisible="{Binding IsSearching}"/>
 
-        <ListView Grid.Row="1"
+        <ListView Grid.Row="2"
                   ItemsSource="{Binding Notes}"
                   ItemSelected="OnNoteSelected"
                   HasUnevenRows="True">
@@ -46,7 +52,7 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Button Grid.Row="2" 
+        <Button Grid.Row="3"
                 Text="Add Note" 
                 Command="{Binding AddNoteCommand}" />
                 

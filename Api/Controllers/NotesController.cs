@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using Api.Models;
 using Microsoft.EntityFrameworkCore;
+using Api.Models;
 
 namespace Api.Controllers;
 
@@ -26,10 +26,7 @@ public class NotesController : ControllerBase
     public async Task<ActionResult<Note>> Get(int id)
     {
         var note = await _db.Notes.FindAsync(id);
-        if (note == null)
-        {
-            return NotFound();
-        }
+        if (note == null) return NotFound();
         return Ok(note);
     }
 
@@ -45,14 +42,14 @@ public class NotesController : ControllerBase
     [HttpPut("{id}")]
     public async Task<IActionResult> Put(int id, [FromBody] Note note)
     {
+        if (id != note.Id) return BadRequest();
         var existingNote = await _db.Notes.FindAsync(id);
-        if (existingNote == null)
-        {
-            return NotFound();
-        }
+        if (existingNote == null) return NotFound();
+
         existingNote.Title = note.Title;
         existingNote.Content = note.Content;
-        existingNote.Date = note.Date == default ? existingNote.Date : note.Date;
+        existingNote.Date = DateTime.UtcNow;
+
         await _db.SaveChangesAsync();
         return NoContent();
     }
@@ -61,15 +58,12 @@ public class NotesController : ControllerBase
     public async Task<IActionResult> Delete(int id)
     {
         var note = await _db.Notes.FindAsync(id);
-        if (note == null)
-        {
-            return NotFound();
-        }
+        if (note == null) return NotFound();
         _db.Notes.Remove(note);
         await _db.SaveChangesAsync();
         return NoContent();
     }
-
+    
     [HttpGet("search")]
     public async Task<ActionResult<IEnumerable<Note>>> Search([FromQuery] string query)
     {

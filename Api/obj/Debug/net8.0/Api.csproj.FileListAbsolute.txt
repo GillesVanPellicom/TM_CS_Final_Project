@@ -89,6 +89,7 @@
 /Users/gvp/RiderProjects/Final_Project/Api/obj/Debug/net8.0/Api.csproj.CoreCompileInputs.cache
 /Users/gvp/RiderProjects/Final_Project/Api/obj/Debug/net8.0/Api.MvcApplicationPartsAssemblyInfo.cs
 /Users/gvp/RiderProjects/Final_Project/Api/obj/Debug/net8.0/Api.MvcApplicationPartsAssemblyInfo.cache
+/Users/gvp/RiderProjects/Final_Project/Api/obj/Debug/net8.0/Api.sourcelink.json
 /Users/gvp/RiderProjects/Final_Project/Api/obj/Debug/net8.0/rjimswa.dswa.cache.json
 /Users/gvp/RiderProjects/Final_Project/Api/obj/Debug/net8.0/rjsmrazor.dswa.cache.json
 /Users/gvp/RiderProjects/Final_Project/Api/obj/Debug/net8.0/rjsmcshtml.dswa.cache.json
@@ -104,4 +105,3 @@
 /Users/gvp/RiderProjects/Final_Project/Api/obj/Debug/net8.0/Api.pdb
 /Users/gvp/RiderProjects/Final_Project/Api/obj/Debug/net8.0/Api.genruntimeconfig.cache
 /Users/gvp/RiderProjects/Final_Project/Api/obj/Debug/net8.0/ref/Api.dll
-/Users/gvp/RiderProjects/Final_Project/Api/obj/Debug/net8.0/Api.sourcelink.json

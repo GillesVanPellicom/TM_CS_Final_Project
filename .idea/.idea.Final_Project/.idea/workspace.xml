@@ -19,12 +19,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="552a3517-e316-4cff-8315-7b5e9a6edaff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Final_Project/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Final_Project/.idea/deploymentTargetSelector.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Final_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Final_Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/Controllers/NotesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Controllers/NotesController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/bin/Debug/net8.0/Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Api/bin/Debug/net8.0/Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/bin/Debug/net8.0/Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Api/bin/Debug/net8.0/Api.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.sourcelink.json" afterDir="false" />
@@ -32,11 +33,9 @@
       <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/refint/Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/refint/Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/rjsmrazor.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Maui_App/Views/AddEditNotePage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Maui_App/Views/AddEditNotePage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maui_App/Services/NotesApiService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Maui_App/Services/NotesApiService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maui_App/ViewModels/NotesViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Maui_App/ViewModels/NotesViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Maui_App/Views/NotesPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Maui_App/Views/NotesPage.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +226,7 @@
       <workItem from="1764960424619" duration="4979000" />
       <workItem from="1765036830624" duration="2018000" />
       <workItem from="1765288914288" duration="1441000" />
-      <workItem from="1765290729647" duration="2508000" />
+      <workItem from="1765290729647" duration="4900000" />
     </task>
     <servers />
   </component>
