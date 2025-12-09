@@ -104,3 +104,4 @@
 /Users/gvp/RiderProjects/Final_Project/Api/obj/Debug/net8.0/Api.pdb
 /Users/gvp/RiderProjects/Final_Project/Api/obj/Debug/net8.0/Api.genruntimeconfig.cache
 /Users/gvp/RiderProjects/Final_Project/Api/obj/Debug/net8.0/ref/Api.dll
+/Users/gvp/RiderProjects/Final_Project/Api/obj/Debug/net8.0/Api.sourcelink.json

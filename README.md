@@ -85,15 +85,45 @@ This will:
 - `DELETE /notes/{id}` — delete
 - `GET /notes/search?query=...` — search in title/content
 
-Working curl
+
+#### GET all notes
+```bash
+curl -X GET "http://localhost:8080/notes"
 ```
-curl -v -X POST \
-http://127.0.0.1:8080/Notes \
--H 'Content-Type: application/json' \
+#### GET a note by ID
+```bash
+curl -X GET "http://localhost:8080/notes/1"
+```
+
+#### POST create a new note
+```bash
+curl -X POST "http://localhost:8080/notes" \
+-H "Content-Type: application/json" \
 -d '{
 "title": "My Test Note",
 "content": "This is a note created via curl."
 }'
+```
+
+#### PUT update an existing note
+```bash
+curl -X PUT "http://localhost:8080/notes/1" \
+-H "Content-Type: application/json" \
+-d '{
+"title": "Updated title",
+"content": "Updated content",
+"date": "2025-02-01T12:00:00Z"
+}'
+```
+
+#### DELETE a note
+```bash
+curl -X DELETE "http://localhost:8080/notes/1"
+```
+
+#### SEARCH notes
+```bash
+curl -X GET "http://localhost:8080/notes/search?query=project"
 ```
 
 ---
@@ -104,6 +134,3 @@ http://127.0.0.1:8080/Notes \
 - MySQL permissions or startup delays: if API starts before DB is ready, restart the API container.
 
 ---
-
-### License
-Educational/demo purposes.

@@ -35,7 +35,7 @@ public static class MauiProgram
       var platformName = DeviceInfo.Platform.ToString();
       var baseUrl = platformName switch
       {
-        "Android" => "http://10.0.2.2:8080", // Android emulator to host
+        "Android" => "http://10.0.2.2:8080", // Android emulator host alias for localhost
         "WinUI" => "http://localhost:8080",
         "MacCatalyst" => "http://localhost:8080",
         "iOS" => "http://localhost:8080",
