@@ -19,17 +19,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="552a3517-e316-4cff-8315-7b5e9a6edaff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Maui_App/Converters/IntToBoolConverter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Maui_App/Platforms/MacCatalyst/AppDelegate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Maui_App/Platforms/MacCatalyst/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Maui_App/Platforms/MacCatalyst/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Final_Project/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Final_Project/.idea/deploymentTargetSelector.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Final_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Final_Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.run/Maui_App.run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.run/Target_Android.run.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/bin/Debug/net8.0/Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Api/bin/Debug/net8.0/Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/bin/Debug/net8.0/Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Api/bin/Debug/net8.0/Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/obj/Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Api.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/Api.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/ref/Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/ref/Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/refint/Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/refint/Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/obj/Debug/net8.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/Debug/net8.0/rjsmrazor.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Api/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Maui_App/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Maui_App/App.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Maui_App/ViewModels/AddEditNoteViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Maui_App/ViewModels/AddEditNoteViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maui_App/Maui_App.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Maui_App/Maui_App.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Maui_App/Views/AddEditNotePage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Maui_App/Views/AddEditNotePage.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,7 +70,19 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/.dotnet/packs/Microsoft.Android.Sdk.Darwin/36.1.2/tools/Xamarin.Android.Tooling.targets" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Maui_App/MauiProgram.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Maui_App/App.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Maui_App/MauiProgram.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Maui_App/Platforms/MacCatalyst/AppDelegate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Maui_App/Platforms/MacCatalyst/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Maui_App/Resources/Styles/Colors.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Maui_App/Resources/Styles/Styles.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Maui_App/Services/INotesApiService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Maui_App/Services/NotesApiService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Maui_App/ViewModels/NotesViewModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Maui_App/Views/AddEditNotePage.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Maui_App/Views/AddEditNotePage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Maui_App/Views/NotesPage.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Maui_App/Views/NotesPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
@@ -82,6 +116,8 @@
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;macOS.Maui_App.executor&quot;: &quot;Run&quot;,
+    &quot;macOS.Target_macOS.executor&quot;: &quot;Run&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -98,7 +134,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Android.Maui_App">
+  <component name="RunManager" selected="macOS.Target_macOS">
     <configuration name="Api" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -146,16 +182,16 @@
     <configuration name="Final_Project" type="XamarinMacProject" factoryName="Xamarin.Mac">
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/Maui_App/Maui_App.csproj" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Maui_App/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64" />
       <option name="PASS_PARENT_ENVS_MAC" value="1" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="Maui_App" type="XamarinMacProject" factoryName="Xamarin.Mac">
+    <configuration name="Target_macOS" type="XamarinMacProject" factoryName="Xamarin.Mac">
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/Maui_App/Maui_App.csproj" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Maui_App/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64" />
       <option name="PASS_PARENT_ENVS_MAC" value="1" />
       <method v="2">
         <option name="Build" />
@@ -182,12 +218,12 @@
     <list>
       <item itemvalue=".NET Project.Api" />
       <item itemvalue="Android.Final_Project" />
-      <item itemvalue="Android.Maui_App" />
+      <item itemvalue="Android.Target_Android" />
       <item itemvalue="Docker.Api/Dockerfile" />
       <item itemvalue="iOS.Final_Project" />
       <item itemvalue="iOS.Maui_App" />
       <item itemvalue="macOS.Final_Project" />
-      <item itemvalue="macOS.Maui_App" />
+      <item itemvalue="macOS.Target_macOS" />
     </list>
   </component>
   <component name="TaskManager">
@@ -215,7 +251,8 @@
       <workItem from="1764960424619" duration="4979000" />
       <workItem from="1765036830624" duration="2018000" />
       <workItem from="1765288914288" duration="1441000" />
-      <workItem from="1765290729647" duration="6337000" />
+      <workItem from="1765290729647" duration="8310000" />
+      <workItem from="1765299772422" duration="383000" />
     </task>
     <servers />
   </component>

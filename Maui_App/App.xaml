@@ -10,6 +10,20 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <Style TargetType="Entry">
+                    <Setter Property="BackgroundColor" Value="Transparent" />
+                </Style>
+                <Style TargetType="Editor">
+                    <Setter Property="BackgroundColor" Value="Transparent" />
+                </Style>
+                <Style TargetType="SearchBar">
+                    <Setter Property="BackgroundColor" Value="Transparent" />
+                </Style>
+                <Style TargetType="ListView">
+                    <Setter Property="BackgroundColor" Value="Transparent" />
+                </Style>
+            </ResourceDictionary>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

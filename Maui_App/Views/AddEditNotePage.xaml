@@ -6,7 +6,7 @@
              x:Name="AddEditPage"
              Title="Add/Edit Note"
              x:DataType="ViewModels:AddEditNoteViewModel">
-    <VerticalStackLayout>
+    <VerticalStackLayout Padding="10">
         <Entry Placeholder="Title" Text="{Binding Note.Title}" IsTextPredictionEnabled="False"/>
         <Editor Placeholder="Content" Text="{Binding Note.Content}" IsTextPredictionEnabled="False" HeightRequest="500" VerticalOptions="FillAndExpand"/>
         <HorizontalStackLayout Spacing="10">

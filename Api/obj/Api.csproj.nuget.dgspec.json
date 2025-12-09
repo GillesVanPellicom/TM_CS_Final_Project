@@ -99,11 +99,6 @@
           },
           "runtimeIdentifierGraphPath": "/Users/gvp/.dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
         }
-      },
-      "runtimes": {
-        "android-arm64": {
-          "#import": []
-        }
       }
     }
   }
