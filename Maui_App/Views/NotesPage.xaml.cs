@@ -1,4 +1,5 @@
 using Maui_App.ViewModels;
+using Maui_App.Models;
 
 namespace Maui_App.Views;
 
@@ -17,5 +18,19 @@ public partial class NotesPage : ContentPage
     {
         base.OnAppearing();
         await _vm.LoadNotes();
+    }
+
+    private void OnNoteSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+        if (e.SelectedItem is Note note)
+        {
+            _vm.EditNoteCommand.Execute(note);
+        }
+
+        // deselect the item
+        if (sender is ListView listView)
+        {
+            listView.SelectedItem = null;
+        }
     }
 }

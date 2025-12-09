@@ -7,8 +7,8 @@
              Title="Add/Edit Note"
              x:DataType="ViewModels:AddEditNoteViewModel">
     <VerticalStackLayout>
-        <Entry Placeholder="Title" Text="{Binding Note.Title}" />
-        <Editor Placeholder="Content" Text="{Binding Note.Content}" />
+        <Entry Placeholder="Title" Text="{Binding Note.Title}" IsTextPredictionEnabled="False"/>
+        <Editor Placeholder="Content" Text="{Binding Note.Content}" IsTextPredictionEnabled="False"/>
         <Button Text="Save" Command="{Binding SaveNoteCommand}" />
     </VerticalStackLayout>
 </ContentPage>

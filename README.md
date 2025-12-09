@@ -77,7 +77,7 @@ This will:
 
 ---
 
-### API endpoints (brief)
+### API endpoints
 - `GET /notes` — list notes (newest first)
 - `GET /notes/{id}` — get by id
 - `POST /notes` — create
@@ -134,3 +134,9 @@ curl -X GET "http://localhost:8080/notes/search?query=project"
 - MySQL permissions or startup delays: if API starts before DB is ready, restart the API container.
 
 ---
+
+### TODO
+- notes search MAUI not working and/or showing results. API works.
+- notes details page. Nothing happens on tap for notes list
+- macos catalyst check
+- dark theme compat

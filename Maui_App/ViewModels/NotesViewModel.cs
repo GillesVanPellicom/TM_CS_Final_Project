@@ -45,8 +45,12 @@ public class NotesViewModel : BindableObject
     {
         try
         {
+            Notes.Clear();
             var notes = await _api.GetNotesAsync();
-            Notes = new ObservableCollection<Note>(notes);
+            foreach (var note in notes)
+            {
+                Notes.Add(note);
+            }
         }
         catch (Exception ex)
         {
