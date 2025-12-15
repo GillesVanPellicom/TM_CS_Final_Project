@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ViewModels="clr-namespace:Maui_App.ViewModels"
@@ -9,18 +10,18 @@
              x:DataType="ViewModels:NotesViewModel">
     <Grid RowDefinitions="Auto, Auto, *, Auto" Padding="10">
 
-        <SearchBar Grid.Row="0" 
-                   x:Name="SearchBar" 
+        <SearchBar Grid.Row="0"
+                   x:Name="SearchBar"
                    Placeholder="Search notes"
                    Text="{Binding SearchText}"
-                   SearchCommand="{Binding SearchCommand}" 
-                   IsTextPredictionEnabled="False" 
-                   IsSpellCheckEnabled="False"/>
-        
+                   SearchCommand="{Binding SearchCommand}"
+                   IsTextPredictionEnabled="False"
+                   IsSpellCheckEnabled="False" />
+
         <Button Grid.Row="1"
                 Text="Clear Search"
                 Command="{Binding ClearSearchCommand}"
-                IsVisible="{Binding IsSearching}"/>
+                IsVisible="{Binding IsSearching}" />
 
         <ListView Grid.Row="2"
                   ItemsSource="{Binding Notes}"
@@ -39,12 +40,12 @@
                                       IsDestructive="True" />
                         </ViewCell.ContextActions>
                         <StackLayout Padding="10,5" Spacing="2">
-                            <Label Text="{Binding Title}" 
-                                   FontAttributes="Bold" 
-                                   FontSize="18"/>
+                            <Label Text="{Binding Title}"
+                                   FontAttributes="Bold"
+                                   FontSize="18" />
                             <Label Text="{Binding Date, StringFormat='{0:g}'}"
-                                   FontSize="14" 
-                                   TextColor="Gray"/>
+                                   FontSize="14"
+                                   TextColor="Gray" />
                             <BoxView HeightRequest="1" BackgroundColor="LightGray" Margin="0,5,0,0" />
                         </StackLayout>
                     </ViewCell>
@@ -53,8 +54,8 @@
         </ListView>
 
         <Button Grid.Row="3"
-                Text="Add Note" 
+                Text="Add Note"
                 Command="{Binding AddNoteCommand}" />
-                
+
     </Grid>
 </ContentPage>

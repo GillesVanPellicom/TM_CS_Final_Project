@@ -10,15 +10,12 @@ using Maui_App.Services;
 
 namespace Maui_App;
 
-public static class MauiProgram
-{
-  public static MauiApp CreateMauiApp()
-  {
+public static class MauiProgram {
+  public static MauiApp CreateMauiApp() {
     var builder = MauiApp.CreateBuilder();
     builder
       .UseMauiApp<App>()
-      .ConfigureFonts(fonts =>
-      {
+      .ConfigureFonts(fonts => {
         fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
         fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
       });
@@ -30,11 +27,9 @@ public static class MauiProgram
     builder.Services.AddTransient<AddEditNotePage>();
 
     // Platform-aware API base URL provider
-    builder.Services.AddSingleton<Func<HttpClient>>(() =>
-    {
+    builder.Services.AddSingleton<Func<HttpClient>>(() => {
       var platformName = DeviceInfo.Platform.ToString();
-      var baseUrl = platformName switch
-      {
+      var baseUrl = platformName switch {
         "Android" => "http://10.0.2.2:8080", // Android emulator host alias for localhost
         "WinUI" => "http://localhost:8080",
         "MacCatalyst" => "http://localhost:8080",
@@ -44,8 +39,7 @@ public static class MauiProgram
       return new HttpClient { BaseAddress = new Uri(baseUrl) };
     });
 
-    builder.Services.AddSingleton<INotesApiService>(sp =>
-    {
+    builder.Services.AddSingleton<INotesApiService>(sp => {
       var httpFactory = sp.GetRequiredService<Func<HttpClient>>();
       return new NotesApiService(httpFactory());
     });
