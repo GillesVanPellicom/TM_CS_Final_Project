@@ -10,13 +10,21 @@
              x:DataType="ViewModels:NotesViewModel">
     <Grid RowDefinitions="Auto, Auto, *, Auto" Padding="10">
 
-        <SearchBar Grid.Row="0"
-                   x:Name="SearchBar"
-                   Placeholder="Search notes"
-                   Text="{Binding SearchText}"
-                   SearchCommand="{Binding SearchCommand}"
-                   IsTextPredictionEnabled="False"
-                   IsSpellCheckEnabled="False" />
+        <Grid Grid.Row="0" ColumnDefinitions="*, Auto">
+            <SearchBar Grid.Column="0"
+                       x:Name="SearchBar"
+                       Placeholder="Search notes"
+                       Text="{Binding SearchText}"
+                       SearchCommand="{Binding SearchCommand}"
+                       IsTextPredictionEnabled="False"
+                       IsSpellCheckEnabled="False"
+                       VerticalOptions="FillAndExpand" />
+
+            <Button Grid.Column="1"
+                    Text="Refresh"
+                    Command="{Binding RefreshCommand}"
+                    VerticalOptions="Center" />
+        </Grid>
 
         <Button Grid.Row="1"
                 Text="Clear Search"

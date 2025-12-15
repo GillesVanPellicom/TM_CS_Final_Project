@@ -3,7 +3,7 @@ using Maui_App.Models;
 
 namespace Maui_App.Views;
 
-public partial class NotesPage : ContentPage {
+public partial class NotesPage {
   private readonly NotesViewModel _vm;
 
   public NotesPage(NotesViewModel vm) {

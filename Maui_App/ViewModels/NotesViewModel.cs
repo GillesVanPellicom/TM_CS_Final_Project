@@ -50,6 +50,7 @@ public class NotesViewModel : BindableObject {
   public ICommand DeleteNoteCommand { get; }
   public ICommand SearchCommand { get; }
   public ICommand ClearSearchCommand { get; }
+  public ICommand RefreshCommand { get; }
 
   public NotesViewModel(INotesApiService api) {
     _api = api;
@@ -82,6 +83,19 @@ public class NotesViewModel : BindableObject {
       SearchText = string.Empty;
       IsSearching = false;
       await LoadNotes();
+    });
+    RefreshCommand = new Command(async () =>
+    {
+        if (IsBusy) return;
+
+        if (IsSearching)
+        {
+            await SearchNotes();
+        }
+        else
+        {
+            await LoadNotes();
+        }
     });
   }
 
