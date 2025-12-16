@@ -36,7 +36,6 @@
             \item \textbf{Container Platform:} Docker v29.1.2
         \end{itemize}
     \end{itemize}
-
     All backend components are containerized and can be reproduced using Docker without requiring any local database or API installation. This ensures consistent behavior across development machines and eliminates configuration drift.
 
 % ---------------------------
@@ -46,7 +45,7 @@
 
     \section{Description}
     This project is a cross-platform notes application built using .NET MAUI. The application targets Android and desktop macOS through Mac Catalyst.
-
+    \\\\
     Users can create, edit, delete, and search textual notes. All note data is persisted in a MySQL database, accessed exclusively through a REST API written in ASP.NET. The MAUI client functions purely as a consumer of this API and does not contain persistence logic.
 
     \section{High-Level Architecture}
@@ -57,7 +56,6 @@
         \item \textbf{ASP.NET REST API} — Application logic and validation.
         \item \textbf{MySQL Database} — Persistent storage.
     \end{itemize}
-
     Each layer has a clearly defined responsibility. This separation avoids leaking infrastructure concerns into the UI and keeps platform-specific code isolated from business logic.
 
 % ---------------------------
@@ -78,7 +76,7 @@
 
     \section{Architectural Rationale}
     The decision to introduce an explicit API layer, rather than connecting the MAUI application directly to the database enforces a strict separation of concerns and ensures that persistence logic, validation, and query behavior remain centralized.
-
+    \\\\
     Further, this architecture improves testability. The API can be exercised independently using HTTP tooling, while the MAUI client can be developed and debugged without a direct dependency on database connectivity details. Using MVVM within the client further separates presentation from state management, reducing UI complexity and improving maintainability.
 
 % ---------------------------
@@ -130,7 +128,7 @@
 
     \section{Docker Compose}
     Docker Compose orchestrates the API and database containers and defines networking, startup order, and persistence behavior.
-
+    \\\\
     Key characteristics of the setup include:
 
     \begin{itemize}
@@ -141,7 +139,7 @@
 
     \section{API Dockerfile}
     The API is built using a multi-stage Dockerfile.
-
+    \\\\
     The build stage compiles and publishes the application using the .NET SDK image. The final stage contains only the published output and the ASP.NET runtime, resulting in a smaller and more secure image. Configuration is supplied through environment variables rather than hard-coded values.
 
 % ---------------------------
@@ -151,7 +149,7 @@
 
     \section{Overview}
     The API is implemented using ASP.NET and exposes a RESTful interface over HTTP. It is stateless and communicates exclusively via JSON.
-
+    \\\\
     All logic related to validation, ordering, and search behavior resides in the API. The client remains agnostic of storage details and interacts solely through defined endpoints.
 
     \section{Endpoint Overview}
@@ -230,7 +228,6 @@ curl -X GET "http://localhost:8080/notes/search?query=project"
         \item A \textbf{.NET MAUI client}, responsible for presentation, user interaction, and navigation.
         \item An \textbf{ASP.NET Core REST API}, responsible for persistence, querying, and data integrity.
     \end{itemize}
-
     The MAUI application never accesses the database directly. All data access is mediated through HTTP calls to the API. This separation keeps the client platform-agnostic and allows the backend to evolve independently.
 
     \section{MVVM Responsibilities}
@@ -257,7 +254,6 @@ curl -X GET "http://localhost:8080/notes/search?query=project"
         \item Translate user intent into service calls.
         \item Perform navigation through MAUI Shell routing.
     \end{itemize}
-
     ViewModels are unaware of transport details such as URLs, JSON, or HTTP verbs. Their dependency is expressed only in terms of interfaces.
 
     \subsection{Service Layer}
@@ -269,7 +265,6 @@ curl -X GET "http://localhost:8080/notes/search?query=project"
         \item \texttt{NotesApiService} implements this contract using \texttt{HttpClient}.
         \item Serialization and endpoint mapping are contained entirely within this layer.
     \end{itemize}
-
     This indirection prevents HTTP concerns from leaking into ViewModels and keeps the application testable.
 
     \section{Dependency Injection and Composition}
@@ -281,7 +276,6 @@ curl -X GET "http://localhost:8080/notes/search?query=project"
         \item A platform-aware \texttt{HttpClient} is configured once and reused.
         \item Services are injected via constructors, not resolved manually.
     \end{itemize}
-
     This ensures a single, explicit location where object lifetimes and dependencies are defined.
 
     \section{Backend Wiring Overview}
@@ -293,11 +287,9 @@ curl -X GET "http://localhost:8080/notes/search?query=project"
         \item Entity Framework Core handles database access via \texttt{NotesDbContext}.
         \item The controller depends on the DbContext through dependency injection.
     \end{itemize}
-
     No business logic is embedded in the controller beyond basic validation and request handling. Persistence logic remains confined to the data layer.
 
     \section{End-to-End Interaction Flow}
-
     The following diagram illustrates the complete interaction path, from user action to persistence and back. Each layer communicates only with its immediate neighbor.
 
     \begin{figure}[H]
@@ -349,7 +341,6 @@ curl -X GET "http://localhost:8080/notes/search?query=project"
         \item API changes are localized to the service layer.
         \item Platform-specific concerns remain outside application logic.
     \end{itemize}
-
     The result is a codebase that is predictable to reason about, straightforward to extend, and resistant to architectural drift as the project grows.
 
 % ---------------------------
@@ -372,7 +363,6 @@ curl -X GET "http://localhost:8080/notes/search?query=project"
                  android:enableOnBackInvokedCallback="true"></application>
 </manifest>
     \end{verbatim}
-
     One detail which might feel unfamiliar to native Android developers is that the \texttt{application} tag is intentionally empty. In .NET MAUI, application wiring and lifecycle integration are generated at build time unless explicitly overridden. The manifest therefore acts as a declarative configuration layer rather than a full application definition.
 
     \section{macOS (Mac Catalyst)}
@@ -390,9 +380,8 @@ curl -X GET "http://localhost:8080/notes/search?query=project"
 % Outcome
 % ---------------------------
     \chapter{Outcome}
-
     This project resulted in a functional cross-platform notes application with a clear separation between presentation, application logic, and persistence.
-
+    \\\\
     Both Android and macOS builds were tested successfully. The backend infrastructure is fully reproducible using Docker, and the architecture allows future extensions without structural changes to existing components. A video recording of a demonstration of this project will be provided seperately.
 
 \end{document}
